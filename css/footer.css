@@ -1,0 +1,22 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+    right: 0;
+}
+
+.copyright{
+    font-size: 10px;
+    color: #5d6274;
+}
+
+.copyright span{
+    color: #fa0;
+}
+
+@media screen and (max-width:768px) {
+    footer{
+        left: 16%;
+        padding-bottom: 10px;
+    }
+}

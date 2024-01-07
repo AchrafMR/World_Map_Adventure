@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #000408;
+}
+
+/* world map */
+
+#name_container {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    opacity: 0;
+    border-radius: 5px;
+    border: 3px solid #fa0;
+    padding: 0px 5px;
+    font-size: 1.5rem;
+}
+
+.country_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    height: fit-content;
+    padding: 5px 12px 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #e9e9e9;
+    box-shadow: 0 1.25rem 4rem #000408c4;
+    display: none;
+    transition: display .8s ease;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff004c;
+}
+
+#data_wrapper {
+    margin-top: 1.25em;
+}
+
+.data_wrapper .flag-img {
+    display: block;
+    width: 45%;
+    min-width: 7.5em;
+    margin: 1.8em auto 1.2em auto;
+}
+
+.data_wrapper h2 {
+    font-weight: 600;
+    color: #222a43;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.8em;
+}
+
+.data-wrapper {
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+}
+
+.data_wrapper h4 {
+    display: inline;
+    font-weight: 500;
+    color: #222a43;
+}
+
+.data_wrapper span {
+    color: #5d6274;
+}
+
+.data_wrapper h3 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ff465a;
+}
+
+svg{
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+svg path {
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+@media screen and (max-width:768px) {
+    .country_content{
+        width: 65%;
+    }
+}
+    
